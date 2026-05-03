@@ -2,7 +2,7 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
-from app.routers import auth
+from app.routers import auth, projects, tasks, dashboard, users
 
 app = FastAPI(
     title="Nexus API",
@@ -19,6 +19,10 @@ app.add_middleware(
 
 # Routers
 app.include_router(auth.router)
+app.include_router(projects.router)
+app.include_router(tasks.router)
+app.include_router(dashboard.router)
+app.include_router(users.router)
 
 @app.get("/")
 async def root():
