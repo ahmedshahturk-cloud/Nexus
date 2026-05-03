@@ -6,6 +6,8 @@ import Layout from './components/Layout';
 import Login from './pages/auth/Login';
 import Signup from './pages/auth/Signup';
 import Dashboard from './pages/Dashboard';
+import Projects from './pages/projects/Projects';
+import ProjectDetails from './pages/projects/ProjectDetails';
 
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
   const { user, loading } = useAuth();
@@ -28,6 +30,22 @@ function App() {
             <ProtectedRoute>
               <Layout>
                 <Dashboard />
+              </Layout>
+            </ProtectedRoute>
+          } />
+          
+          <Route path="/projects" element={
+            <ProtectedRoute>
+              <Layout>
+                <Projects />
+              </Layout>
+            </ProtectedRoute>
+          } />
+          
+          <Route path="/projects/:id" element={
+            <ProtectedRoute>
+              <Layout>
+                <ProjectDetails />
               </Layout>
             </ProtectedRoute>
           } />
