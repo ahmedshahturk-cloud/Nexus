@@ -15,16 +15,29 @@ import {
 import { Button } from '../../components/ui/button';
 import { Badge } from '../../components/ui/badge';
 import { Card, CardContent } from '../../components/ui/card';
+import { Input } from '../../components/ui/input';
+import { Label } from '../../components/ui/label';
 import api from '../../lib/axios';
-import type { ProjectDetail, Task, TaskStatus } from '@/types';
+import type { ProjectDetail, Task, TaskPriority, TaskStatus, User } from '@/types';
 import { format } from 'date-fns';
 import type { LucideIcon } from 'lucide-react';
+import { toast } from 'react-hot-toast';
+import { AxiosError } from 'axios';
 
 const ProjectDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const [project, setProject] = useState<ProjectDetail | null>(null);
   const [tasks, setTasks] = useState<Task[]>([]);
+  const [users, setUsers] = useState<User[]>([]);
   const [loading, setLoading] = useState(true);
+  const [isTaskOpen, setIsTaskOpen] = useState(false);
+  const [isMemberOpen, setIsMemberOpen] = useState(false);
+  const [taskTitle, setTaskTitle] = useState('');
+  const [taskDescription, setTaskDescription] = useState('');
+  const [taskPriority, setTaskPriority] = useState<TaskPriority>('medium');
+  const [taskDueDate, setTaskDueDate] = useState('');
+  const [taskAssignee, setTaskAssignee] = useState('');
+  const [memberId, setMemberId] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
@@ -35,6 +48,8 @@ const ProjectDetails: React.FC = () => {
         ]);
         setProject(projRes.data);
         setTasks(tasksRes.data);
+        const usersRes = await api.get('/api/v1/users/');
+        setUsers(usersRes.data);
       } catch (error) {
         console.error('Failed to fetch project details', error);
       } finally {
@@ -43,6 +58,61 @@ const ProjectDetails: React.FC = () => {
     };
     fetchData();
   }, [id]);
+
+  const refreshProject = async () => {
+    const response = await api.get(`/api/v1/projects/${id}`);
+    setProject(response.data);
+  };
+
+  const handleCreateTask = async (event: React.FormEvent) => {
+    event.preventDefault();
+    const title = taskTitle.trim();
+
+    if (!title) {
+      toast.error('Task title is required');
+      return;
+    }
+
+    try {
+      const response = await api.post(`/api/v1/projects/${id}/tasks`, {
+        title,
+        description: taskDescription.trim() || null,
+        priority: taskPriority,
+        due_date: taskDueDate || null,
+        assigned_to: taskAssignee || null,
+      });
+      setTasks((current) => [response.data, ...current]);
+      setTaskTitle('');
+      setTaskDescription('');
+      setTaskPriority('medium');
+      setTaskDueDate('');
+      setTaskAssignee('');
+      setIsTaskOpen(false);
+      toast.success('Task created');
+    } catch (error) {
+      const detail = error instanceof AxiosError ? error.response?.data?.detail : null;
+      toast.error(detail || 'Failed to create task');
+    }
+  };
+
+  const handleAddMember = async (event: React.FormEvent) => {
+    event.preventDefault();
+    if (!memberId) {
+      toast.error('Choose a member');
+      return;
+    }
+
+    try {
+      await api.post(`/api/v1/projects/${id}/members`, { user_id: memberId });
+      setMemberId('');
+      setIsMemberOpen(false);
+      await refreshProject();
+      toast.success('Member added');
+    } catch (error) {
+      const detail = error instanceof AxiosError ? error.response?.data?.detail : null;
+      toast.error(detail || 'Failed to add member');
+    }
+  };
 
   if (loading || !project) {
     return <div className="p-10 skeleton h-96 rounded-3xl" />;
@@ -83,7 +153,11 @@ const ProjectDetails: React.FC = () => {
           </div>
         </div>
         <div className="flex items-center gap-3">
-          <Button variant="outline" className="bg-dark-card border-dark-border rounded-xl">
+          <Button
+            variant="outline"
+            className="bg-dark-card border-dark-border rounded-xl"
+            onClick={() => setIsMemberOpen(true)}
+          >
             <Users className="w-4 h-4 mr-2" />
             Team
           </Button>
@@ -91,12 +165,87 @@ const ProjectDetails: React.FC = () => {
             <Settings className="w-4 h-4 mr-2" />
             Settings
           </Button>
-          <Button className="bg-primary hover:bg-primary/90 text-white rounded-xl shadow-lg shadow-primary/20">
+          <Button
+            className="bg-primary hover:bg-primary/90 text-white rounded-xl shadow-lg shadow-primary/20"
+            onClick={() => setIsTaskOpen(true)}
+          >
             <Plus className="w-5 h-5 mr-2" />
             Add Task
           </Button>
         </div>
       </div>
+
+      {isTaskOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4 backdrop-blur-sm">
+          <form onSubmit={handleCreateTask} className="w-full max-w-lg space-y-5 rounded-xl border border-white/10 bg-dark-card p-6 shadow-2xl shadow-primary/20">
+            <div>
+              <h2 className="text-2xl font-bold text-text-primary">Add Task</h2>
+              <p className="mt-1 text-sm text-text-secondary">Create work and assign it to a project member.</p>
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="task-title" className="text-text-primary">Title</Label>
+              <Input id="task-title" value={taskTitle} onChange={(event) => setTaskTitle(event.target.value)} className="h-11 bg-dark border-dark-border text-white" autoFocus />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="task-description" className="text-text-primary">Description</Label>
+              <textarea id="task-description" value={taskDescription} onChange={(event) => setTaskDescription(event.target.value)} className="min-h-24 w-full resize-none rounded-lg border border-dark-border bg-dark px-3 py-2 text-sm text-white outline-none focus-visible:ring-3 focus-visible:ring-primary/50" />
+            </div>
+            <div className="grid gap-4 md:grid-cols-3">
+              <div className="space-y-2">
+                <Label htmlFor="task-priority" className="text-text-primary">Priority</Label>
+                <select id="task-priority" value={taskPriority} onChange={(event) => setTaskPriority(event.target.value as TaskPriority)} className="h-11 w-full rounded-lg border border-dark-border bg-dark px-3 text-sm text-white">
+                  <option value="low">Low</option>
+                  <option value="medium">Medium</option>
+                  <option value="high">High</option>
+                </select>
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="task-date" className="text-text-primary">Due date</Label>
+                <Input id="task-date" type="date" value={taskDueDate} onChange={(event) => setTaskDueDate(event.target.value)} className="h-11 bg-dark border-dark-border text-white" />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="task-assignee" className="text-text-primary">Assign to</Label>
+                <select id="task-assignee" value={taskAssignee} onChange={(event) => setTaskAssignee(event.target.value)} className="h-11 w-full rounded-lg border border-dark-border bg-dark px-3 text-sm text-white">
+                  <option value="">Unassigned</option>
+                  {project.members.map((member) => (
+                    <option key={member.id} value={member.id}>{member.name}</option>
+                  ))}
+                </select>
+              </div>
+            </div>
+            <div className="flex justify-end gap-3 pt-2">
+              <Button type="button" variant="outline" className="border-dark-border bg-dark" onClick={() => setIsTaskOpen(false)}>Cancel</Button>
+              <Button type="submit" className="bg-primary text-white">Create Task</Button>
+            </div>
+          </form>
+        </div>
+      )}
+
+      {isMemberOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4 backdrop-blur-sm">
+          <form onSubmit={handleAddMember} className="w-full max-w-md space-y-5 rounded-xl border border-white/10 bg-dark-card p-6 shadow-2xl shadow-primary/20">
+            <div>
+              <h2 className="text-2xl font-bold text-text-primary">Add Member</h2>
+              <p className="mt-1 text-sm text-text-secondary">Add an employee before assigning tasks.</p>
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="member" className="text-text-primary">Member</Label>
+              <select id="member" value={memberId} onChange={(event) => setMemberId(event.target.value)} className="h-11 w-full rounded-lg border border-dark-border bg-dark px-3 text-sm text-white">
+                <option value="">Choose user</option>
+                {users
+                  .filter((user) => user.role === 'member' && !project.members.some((member) => member.id === user.id))
+                  .map((user) => (
+                    <option key={user.id} value={user.id}>{user.name} - {user.email}</option>
+                  ))}
+              </select>
+            </div>
+            <div className="flex justify-end gap-3 pt-2">
+              <Button type="button" variant="outline" className="border-dark-border bg-dark" onClick={() => setIsMemberOpen(false)}>Cancel</Button>
+              <Button type="submit" className="bg-primary text-white">Add Member</Button>
+            </div>
+          </form>
+        </div>
+      )}
 
       {/* Stats Summary */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

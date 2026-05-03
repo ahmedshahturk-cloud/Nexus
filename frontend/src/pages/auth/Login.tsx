@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, Link, useSearchParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useAuth } from '../../context/AuthContext';
 import api from '../../lib/axios';
@@ -10,8 +10,11 @@ import { Label } from '../../components/ui/label';
 import { toast } from 'react-hot-toast';
 import { LogIn, Loader2, Sparkles } from 'lucide-react';
 import { AxiosError } from 'axios';
+import type { UserRole } from '@/types';
 
 const Login: React.FC = () => {
+  const [searchParams] = useSearchParams();
+  const role = (searchParams.get('role') === 'admin' ? 'admin' : 'member') as UserRole;
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -23,6 +26,10 @@ const Login: React.FC = () => {
     setIsLoading(true);
     try {
       const response = await api.post('/api/v1/auth/login', { email, password });
+      if (response.data.user.role !== role) {
+        toast.error(`This is a ${response.data.user.role} account. Choose the correct login type.`);
+        return;
+      }
       login(response.data.access_token, response.data.user);
       navigate('/');
     } catch (error) {
@@ -50,12 +57,12 @@ const Login: React.FC = () => {
             <Sparkles className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-4xl font-bold text-text-primary tracking-tight">Nexus</h1>
-          <p className="text-text-secondary mt-2">Team management, evolved.</p>
+          <p className="text-text-secondary mt-2">{role === 'admin' ? 'Admin control room.' : 'Member task workspace.'}</p>
         </div>
 
         <Card className="border-white/15 bg-dark-card/90 shadow-2xl shadow-primary/10 backdrop-blur-xl">
           <CardHeader className="px-6 pt-6">
-            <CardTitle className="text-2xl text-text-primary">Sign In</CardTitle>
+            <CardTitle className="text-2xl text-text-primary">{role === 'admin' ? 'Admin Sign In' : 'Member Sign In'}</CardTitle>
             <CardDescription className="text-text-secondary">
               Enter your credentials to access your workspace
             </CardDescription>
@@ -105,10 +112,13 @@ const Login: React.FC = () => {
               </Button>
               <p className="text-sm text-text-secondary text-center">
                 Don't have an account?{' '}
-                <Link to="/signup" className="text-primary hover:underline font-medium">
+                <Link to={`/signup?role=${role}`} className="text-primary hover:underline font-medium">
                   Create one
                 </Link>
               </p>
+              <Link to="/choose" className="text-sm text-text-secondary hover:text-primary">
+                Change role
+              </Link>
             </CardFooter>
           </form>
         </Card>

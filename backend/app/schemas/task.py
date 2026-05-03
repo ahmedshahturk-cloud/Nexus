@@ -1,6 +1,6 @@
 import uuid
 from datetime import datetime, date
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel, ConfigDict, Field
 from typing import Optional
 
 class MemberOut(BaseModel):
@@ -37,8 +37,8 @@ class TaskOut(BaseModel):
     priority: str
     due_date: Optional[date]
     project_id: uuid.UUID
-    created_by: MemberOut
-    assigned_to: Optional[MemberOut]
+    created_by: MemberOut = Field(validation_alias="creator")
+    assigned_to: Optional[MemberOut] = Field(validation_alias="assignee")
     created_at: datetime
     updated_at: datetime
 

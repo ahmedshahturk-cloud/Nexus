@@ -13,7 +13,8 @@ import {
   Bell, 
   Search,
   ChevronRight,
-  Sparkles
+  Sparkles,
+  ListTodo
 } from 'lucide-react';
 import { Button } from './ui/button';
 
@@ -27,13 +28,18 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation();
 
   const navItems = [
-    { name: 'Dashboard', icon: LayoutDashboard, path: '/' },
-    { name: 'Projects', icon: FolderKanban, path: '/projects' },
+    { name: 'Dashboard', icon: LayoutDashboard, path: '/dashboard', adminOnly: true },
+    { name: 'Projects', icon: FolderKanban, path: '/projects', adminOnly: true },
+    { name: 'My Tasks', icon: ListTodo, path: '/my-tasks', memberOnly: true },
     { name: 'Team', icon: Users, path: '/team', adminOnly: true },
     { name: 'Settings', icon: Settings, path: '/settings' },
   ];
 
-  const filteredNavItems = navItems.filter(item => !item.adminOnly || user?.role === 'admin');
+  const filteredNavItems = navItems.filter(item => {
+    if (item.adminOnly) return user?.role === 'admin';
+    if (item.memberOnly) return user?.role === 'member';
+    return true;
+  });
 
   return (
     <div className="flex h-screen bg-dark overflow-hidden">

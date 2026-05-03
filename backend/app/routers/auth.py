@@ -22,7 +22,7 @@ def signup(payload: SignupRequest, db: Session = Depends(get_db)):
         name=payload.name,
         email=payload.email,
         password_hash=hash_password(payload.password),
-        role="member" # default role
+        role=payload.role or "member"
     )
     db.add(new_user)
     db.commit()

@@ -1,12 +1,13 @@
 import uuid
 from datetime import datetime
 from pydantic import BaseModel, EmailStr, Field, field_validator
-from typing import Optional
+from typing import Literal, Optional
 
 class SignupRequest(BaseModel):
     name: str = Field(..., min_length=2, max_length=100)
     email: EmailStr
     password: str = Field(..., min_length=8)
+    role: Optional[Literal["admin", "member"]] = "member"
 
     @field_validator("password")
     @classmethod

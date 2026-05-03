@@ -77,6 +77,19 @@ const Projects: React.FC = () => {
     }
   };
 
+  const handleDeleteProject = async (projectId: string) => {
+    if (!window.confirm('Delete this project? This will remove its tasks too.')) return;
+
+    try {
+      await api.delete(`/api/v1/projects/${projectId}`);
+      setProjects((current) => current.filter((project) => project.id !== projectId));
+      toast.success('Project deleted');
+    } catch (error) {
+      const detail = error instanceof AxiosError ? error.response?.data?.detail : null;
+      toast.error(detail || 'Failed to delete project');
+    }
+  };
+
   if (loading) {
     return (
       <div className="space-y-6">
@@ -185,7 +198,12 @@ const Projects: React.FC = () => {
                   <div className="w-12 h-12 bg-dark border border-dark-border rounded-xl flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
                     <FolderKanban className="w-6 h-6" />
                   </div>
-                  <Button variant="ghost" size="icon" className="text-text-secondary">
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="text-text-secondary hover:text-destructive"
+                    onClick={() => handleDeleteProject(project.id)}
+                  >
                     <MoreVertical className="w-5 h-5" />
                   </Button>
                 </div>

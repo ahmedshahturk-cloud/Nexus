@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, Link, useSearchParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useAuth } from '../../context/AuthContext';
 import api from '../../lib/axios';
@@ -10,8 +10,11 @@ import { Label } from '../../components/ui/label';
 import { toast } from 'react-hot-toast';
 import { UserPlus, Loader2, Sparkles } from 'lucide-react';
 import { AxiosError } from 'axios';
+import type { UserRole } from '@/types';
 
 const Signup: React.FC = () => {
+  const [searchParams] = useSearchParams();
+  const role = (searchParams.get('role') === 'admin' ? 'admin' : 'member') as UserRole;
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -23,7 +26,7 @@ const Signup: React.FC = () => {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await api.post('/api/v1/auth/signup', { name, email, password });
+      const response = await api.post('/api/v1/auth/signup', { name, email, password, role });
       login(response.data.access_token, response.data.user);
       navigate('/');
     } catch (error) {
@@ -51,12 +54,12 @@ const Signup: React.FC = () => {
             <Sparkles className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-4xl font-bold text-text-primary tracking-tight">Nexus</h1>
-          <p className="text-text-secondary mt-2">Join the future of team management.</p>
+          <p className="text-text-secondary mt-2">{role === 'admin' ? 'Create a boss workspace.' : 'Join as an employee.'}</p>
         </div>
 
         <Card className="border-white/15 bg-dark-card/90 shadow-2xl shadow-primary/10 backdrop-blur-xl">
           <CardHeader className="px-6 pt-6">
-            <CardTitle className="text-2xl text-text-primary">Create Account</CardTitle>
+            <CardTitle className="text-2xl text-text-primary">Create {role === 'admin' ? 'Admin' : 'Member'} Account</CardTitle>
             <CardDescription className="text-text-secondary">
               Sign up to start managing your projects effortlessly
             </CardDescription>
@@ -117,10 +120,13 @@ const Signup: React.FC = () => {
               </Button>
               <p className="text-sm text-text-secondary text-center">
                 Already have an account?{' '}
-                <Link to="/login" className="text-primary hover:underline font-medium">
+                <Link to={`/login?role=${role}`} className="text-primary hover:underline font-medium">
                   Sign In
                 </Link>
               </p>
+              <Link to="/choose" className="text-sm text-text-secondary hover:text-primary">
+                Change role
+              </Link>
             </CardFooter>
           </form>
         </Card>
