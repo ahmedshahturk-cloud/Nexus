@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { AuthProvider, useAuth } from './context/AuthContext';
+import Layout from './components/Layout';
 
 import Login from './pages/auth/Login';
 import Signup from './pages/auth/Signup';
-const Dashboard = () => <div className="p-10">Dashboard Page (Coming soon in Phase 5)</div>;
+import Dashboard from './pages/Dashboard';
 
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
   const { user, loading } = useAuth();
@@ -25,7 +26,9 @@ function App() {
           
           <Route path="/" element={
             <ProtectedRoute>
-              <Dashboard />
+              <Layout>
+                <Dashboard />
+              </Layout>
             </ProtectedRoute>
           } />
           
