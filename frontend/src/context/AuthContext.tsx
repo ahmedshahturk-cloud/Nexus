@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { User } from '../types';
+import type { User } from '@/types';
 import api from '../lib/axios';
 import { toast } from 'react-hot-toast';
 
@@ -15,12 +15,11 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(() => Boolean(localStorage.getItem('nexus_token')));
 
   const fetchUser = async () => {
     const token = localStorage.getItem('nexus_token');
     if (!token) {
-      setLoading(false);
       return;
     }
 
@@ -37,7 +36,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   useEffect(() => {
-    fetchUser();
+    queueMicrotask(() => {
+      void fetchUser();
+    });
   }, []);
 
   const login = (token: string, userData: User) => {

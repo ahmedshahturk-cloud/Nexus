@@ -9,6 +9,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { Label } from '../../components/ui/label';
 import { toast } from 'react-hot-toast';
 import { UserPlus, Loader2, Sparkles } from 'lucide-react';
+import { AxiosError } from 'axios';
 
 const Signup: React.FC = () => {
   const [name, setName] = useState('');
@@ -25,8 +26,9 @@ const Signup: React.FC = () => {
       const response = await api.post('/api/v1/auth/signup', { name, email, password });
       login(response.data.access_token, response.data.user);
       navigate('/');
-    } catch (error: any) {
-      toast.error(error.response?.data?.detail || 'Account creation failed');
+    } catch (error) {
+      const detail = error instanceof AxiosError ? error.response?.data?.detail : null;
+      toast.error(detail || 'Account creation failed');
     } finally {
       setIsLoading(false);
     }

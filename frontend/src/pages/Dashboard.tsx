@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, 
-  Cell, PieChart, Pie
+  Cell
 } from 'recharts';
 import { 
   FolderKanban, 
@@ -10,7 +10,6 @@ import {
   Clock, 
   Users, 
   AlertCircle, 
-  ArrowUpRight,
   Plus
 } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from '../components/ui/card';
@@ -18,7 +17,7 @@ import { Button } from '../components/ui/button';
 import { Badge } from '../components/ui/badge';
 import { Progress } from '../components/ui/progress';
 import api from '../lib/axios';
-import { DashboardData } from '../types';
+import type { DashboardData } from '@/types';
 import { format } from 'date-fns';
 
 const Dashboard: React.FC = () => {

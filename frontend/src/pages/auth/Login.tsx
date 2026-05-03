@@ -9,6 +9,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { Label } from '../../components/ui/label';
 import { toast } from 'react-hot-toast';
 import { LogIn, Loader2, Sparkles } from 'lucide-react';
+import { AxiosError } from 'axios';
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -24,8 +25,9 @@ const Login: React.FC = () => {
       const response = await api.post('/api/v1/auth/login', { email, password });
       login(response.data.access_token, response.data.user);
       navigate('/');
-    } catch (error: any) {
-      toast.error(error.response?.data?.detail || 'Invalid credentials');
+    } catch (error) {
+      const detail = error instanceof AxiosError ? error.response?.data?.detail : null;
+      toast.error(detail || 'Invalid credentials');
     } finally {
       setIsLoading(false);
     }

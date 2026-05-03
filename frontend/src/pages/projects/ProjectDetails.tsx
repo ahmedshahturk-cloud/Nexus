@@ -3,7 +3,6 @@ import { useParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Plus, 
-  Filter, 
   MoreHorizontal, 
   Clock, 
   AlertCircle,
@@ -15,11 +14,11 @@ import {
 } from 'lucide-react';
 import { Button } from '../../components/ui/button';
 import { Badge } from '../../components/ui/badge';
-import { Card, CardHeader, CardTitle, CardContent } from '../../components/ui/card';
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '../../components/ui/tabs';
+import { Card, CardContent } from '../../components/ui/card';
 import api from '../../lib/axios';
-import { ProjectDetail, Task, TaskStatus } from '../../types';
+import type { ProjectDetail, Task, TaskStatus } from '@/types';
 import { format } from 'date-fns';
+import type { LucideIcon } from 'lucide-react';
 
 const ProjectDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -45,20 +44,11 @@ const ProjectDetails: React.FC = () => {
     fetchData();
   }, [id]);
 
-  const updateTaskStatus = async (taskId: string, newStatus: TaskStatus) => {
-    try {
-      await api.put(`/api/v1/tasks/${taskId}`, { status: newStatus });
-      setTasks(tasks.map(t => t.id === taskId ? { ...t, status: newStatus } : t));
-    } catch (error) {
-      console.error('Failed to update task', error);
-    }
-  };
-
   if (loading || !project) {
     return <div className="p-10 skeleton h-96 rounded-3xl" />;
   }
 
-  const columns: { title: string; status: TaskStatus; icon: any; color: string }[] = [
+  const columns: { title: string; status: TaskStatus; icon: LucideIcon; color: string }[] = [
     { title: 'To Do', status: 'todo', icon: AlertCircle, color: 'text-text-secondary' },
     { title: 'In Progress', status: 'in_progress', icon: Clock, color: 'text-primary' },
     { title: 'Completed', status: 'done', icon: CheckCircle2, color: 'text-accent' },
