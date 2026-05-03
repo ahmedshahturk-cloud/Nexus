@@ -1,0 +1,2792 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "main.py",
+      "file_type": "code",
+      "source_file": "backend\\main.py",
+      "source_location": "L1",
+      "id": "backend_main_py",
+      "community": 7,
+      "norm_label": "main.py"
+    },
+    {
+      "label": "root()",
+      "file_type": "code",
+      "source_file": "backend\\main.py",
+      "source_location": "L28",
+      "id": "backend_main_root",
+      "community": 7,
+      "norm_label": "root()"
+    },
+    {
+      "label": "health()",
+      "file_type": "code",
+      "source_file": "backend\\main.py",
+      "source_location": "L32",
+      "id": "backend_main_health",
+      "community": 7,
+      "norm_label": "health()"
+    },
+    {
+      "label": "env.py",
+      "file_type": "code",
+      "source_file": "backend\\alembic\\env.py",
+      "source_location": "L1",
+      "id": "backend_alembic_env_py",
+      "community": 5,
+      "norm_label": "env.py"
+    },
+    {
+      "label": "run_migrations_offline()",
+      "file_type": "code",
+      "source_file": "backend\\alembic\\env.py",
+      "source_location": "L39",
+      "id": "alembic_env_run_migrations_offline",
+      "community": 5,
+      "norm_label": "run_migrations_offline()"
+    },
+    {
+      "label": "run_migrations_online()",
+      "file_type": "code",
+      "source_file": "backend\\alembic\\env.py",
+      "source_location": "L63",
+      "id": "alembic_env_run_migrations_online",
+      "community": 5,
+      "norm_label": "run_migrations_online()"
+    },
+    {
+      "label": "Run migrations in 'offline' mode.      This configures the context with just a U",
+      "file_type": "rationale",
+      "source_file": "backend\\alembic\\env.py",
+      "source_location": "L40",
+      "id": "alembic_env_rationale_40",
+      "community": 5,
+      "norm_label": "run migrations in 'offline' mode.      this configures the context with just a u"
+    },
+    {
+      "label": "Run migrations in 'online' mode.      In this scenario we need to create an Engi",
+      "file_type": "rationale",
+      "source_file": "backend\\alembic\\env.py",
+      "source_location": "L64",
+      "id": "alembic_env_rationale_64",
+      "community": 5,
+      "norm_label": "run migrations in 'online' mode.      in this scenario we need to create an engi"
+    },
+    {
+      "label": "42e0b4fc5555_initial.py",
+      "file_type": "code",
+      "source_file": "backend\\alembic\\versions\\42e0b4fc5555_initial.py",
+      "source_location": "L1",
+      "id": "backend_alembic_versions_42e0b4fc5555_initial_py",
+      "community": 6,
+      "norm_label": "42e0b4fc5555_initial.py"
+    },
+    {
+      "label": "upgrade()",
+      "file_type": "code",
+      "source_file": "backend\\alembic\\versions\\42e0b4fc5555_initial.py",
+      "source_location": "L21",
+      "id": "versions_42e0b4fc5555_initial_upgrade",
+      "community": 6,
+      "norm_label": "upgrade()"
+    },
+    {
+      "label": "downgrade()",
+      "file_type": "code",
+      "source_file": "backend\\alembic\\versions\\42e0b4fc5555_initial.py",
+      "source_location": "L72",
+      "id": "versions_42e0b4fc5555_initial_downgrade",
+      "community": 6,
+      "norm_label": "downgrade()"
+    },
+    {
+      "label": "initial  Revision ID: 42e0b4fc5555 Revises:  Create Date: 2026-05-03 15:25:05.24",
+      "file_type": "rationale",
+      "source_file": "backend\\alembic\\versions\\42e0b4fc5555_initial.py",
+      "source_location": "L1",
+      "id": "versions_42e0b4fc5555_initial_rationale_1",
+      "community": 6,
+      "norm_label": "initial  revision id: 42e0b4fc5555 revises:  create date: 2026-05-03 15:25:05.24"
+    },
+    {
+      "label": "config.py",
+      "file_type": "code",
+      "source_file": "backend\\app\\core\\config.py",
+      "source_location": "L1",
+      "id": "backend_app_core_config_py",
+      "community": 3,
+      "norm_label": "config.py"
+    },
+    {
+      "label": "Settings",
+      "file_type": "code",
+      "source_file": "backend\\app\\core\\config.py",
+      "source_location": "L3",
+      "id": "core_config_settings",
+      "community": 3,
+      "norm_label": "settings"
+    },
+    {
+      "label": "BaseSettings",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "basesettings",
+      "community": 3,
+      "norm_label": "basesettings"
+    },
+    {
+      "label": "dependencies.py",
+      "file_type": "code",
+      "source_file": "backend\\app\\core\\dependencies.py",
+      "source_location": "L1",
+      "id": "backend_app_core_dependencies_py",
+      "community": 3,
+      "norm_label": "dependencies.py"
+    },
+    {
+      "label": "get_db()",
+      "file_type": "code",
+      "source_file": "backend\\app\\core\\dependencies.py",
+      "source_location": "L15",
+      "id": "core_dependencies_get_db",
+      "community": 3,
+      "norm_label": "get_db()"
+    },
+    {
+      "label": "get_current_user()",
+      "file_type": "code",
+      "source_file": "backend\\app\\core\\dependencies.py",
+      "source_location": "L22",
+      "id": "core_dependencies_get_current_user",
+      "community": 3,
+      "norm_label": "get_current_user()"
+    },
+    {
+      "label": "require_admin()",
+      "file_type": "code",
+      "source_file": "backend\\app\\core\\dependencies.py",
+      "source_location": "L37",
+      "id": "core_dependencies_require_admin",
+      "community": 3,
+      "norm_label": "require_admin()"
+    },
+    {
+      "label": "security.py",
+      "file_type": "code",
+      "source_file": "backend\\app\\core\\security.py",
+      "source_location": "L1",
+      "id": "backend_app_core_security_py",
+      "community": 3,
+      "norm_label": "security.py"
+    },
+    {
+      "label": "hash_password()",
+      "file_type": "code",
+      "source_file": "backend\\app\\core\\security.py",
+      "source_location": "L7",
+      "id": "core_security_hash_password",
+      "community": 3,
+      "norm_label": "hash_password()"
+    },
+    {
+      "label": "verify_password()",
+      "file_type": "code",
+      "source_file": "backend\\app\\core\\security.py",
+      "source_location": "L14",
+      "id": "core_security_verify_password",
+      "community": 3,
+      "norm_label": "verify_password()"
+    },
+    {
+      "label": "create_access_token()",
+      "file_type": "code",
+      "source_file": "backend\\app\\core\\security.py",
+      "source_location": "L19",
+      "id": "core_security_create_access_token",
+      "community": 3,
+      "norm_label": "create_access_token()"
+    },
+    {
+      "label": "decode_token()",
+      "file_type": "code",
+      "source_file": "backend\\app\\core\\security.py",
+      "source_location": "L29",
+      "id": "core_security_decode_token",
+      "community": 3,
+      "norm_label": "decode_token()"
+    },
+    {
+      "label": "base.py",
+      "file_type": "code",
+      "source_file": "backend\\app\\models\\base.py",
+      "source_location": "L1",
+      "id": "backend_app_models_base_py",
+      "community": 0,
+      "norm_label": "base.py"
+    },
+    {
+      "label": "Base",
+      "file_type": "code",
+      "source_file": "backend\\app\\models\\base.py",
+      "source_location": "L3",
+      "id": "models_base_base",
+      "community": 0,
+      "norm_label": "base"
+    },
+    {
+      "label": "DeclarativeBase",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "declarativebase",
+      "community": 0,
+      "norm_label": "declarativebase"
+    },
+    {
+      "label": "project.py",
+      "file_type": "code",
+      "source_file": "backend\\app\\models\\project.py",
+      "source_location": "L1",
+      "id": "backend_app_models_project_py",
+      "community": 0,
+      "norm_label": "project.py"
+    },
+    {
+      "label": "Project",
+      "file_type": "code",
+      "source_file": "backend\\app\\models\\project.py",
+      "source_location": "L7",
+      "id": "models_project_project",
+      "community": 0,
+      "norm_label": "project"
+    },
+    {
+      "label": "Base",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "base",
+      "community": 0,
+      "norm_label": "base"
+    },
+    {
+      "label": "project_member.py",
+      "file_type": "code",
+      "source_file": "backend\\app\\models\\project_member.py",
+      "source_location": "L1",
+      "id": "backend_app_models_project_member_py",
+      "community": 0,
+      "norm_label": "project_member.py"
+    },
+    {
+      "label": "task.py",
+      "file_type": "code",
+      "source_file": "backend\\app\\models\\task.py",
+      "source_location": "L1",
+      "id": "backend_app_models_task_py",
+      "community": 0,
+      "norm_label": "task.py"
+    },
+    {
+      "label": "Task",
+      "file_type": "code",
+      "source_file": "backend\\app\\models\\task.py",
+      "source_location": "L7",
+      "id": "models_task_task",
+      "community": 0,
+      "norm_label": "task"
+    },
+    {
+      "label": "user.py",
+      "file_type": "code",
+      "source_file": "backend\\app\\models\\user.py",
+      "source_location": "L1",
+      "id": "backend_app_models_user_py",
+      "community": 0,
+      "norm_label": "user.py"
+    },
+    {
+      "label": "User",
+      "file_type": "code",
+      "source_file": "backend\\app\\models\\user.py",
+      "source_location": "L7",
+      "id": "models_user_user",
+      "community": 0,
+      "norm_label": "user"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "backend\\app\\models\\__init__.py",
+      "source_location": "L1",
+      "id": "backend_app_models_init_py",
+      "community": 0,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "auth.py",
+      "file_type": "code",
+      "source_file": "backend\\app\\routers\\auth.py",
+      "source_location": "L1",
+      "id": "backend_app_routers_auth_py",
+      "community": 3,
+      "norm_label": "auth.py"
+    },
+    {
+      "label": "signup()",
+      "file_type": "code",
+      "source_file": "backend\\app\\routers\\auth.py",
+      "source_location": "L11",
+      "id": "routers_auth_signup",
+      "community": 3,
+      "norm_label": "signup()"
+    },
+    {
+      "label": "login()",
+      "file_type": "code",
+      "source_file": "backend\\app\\routers\\auth.py",
+      "source_location": "L41",
+      "id": "routers_auth_login",
+      "community": 3,
+      "norm_label": "login()"
+    },
+    {
+      "label": "get_me()",
+      "file_type": "code",
+      "source_file": "backend\\app\\routers\\auth.py",
+      "source_location": "L58",
+      "id": "routers_auth_get_me",
+      "community": 3,
+      "norm_label": "get_me()"
+    },
+    {
+      "label": "dashboard.py",
+      "file_type": "code",
+      "source_file": "backend\\app\\routers\\dashboard.py",
+      "source_location": "L1",
+      "id": "backend_app_routers_dashboard_py",
+      "community": 0,
+      "norm_label": "dashboard.py"
+    },
+    {
+      "label": "get_dashboard_data()",
+      "file_type": "code",
+      "source_file": "backend\\app\\routers\\dashboard.py",
+      "source_location": "L14",
+      "id": "routers_dashboard_get_dashboard_data",
+      "community": 0,
+      "norm_label": "get_dashboard_data()"
+    },
+    {
+      "label": "projects.py",
+      "file_type": "code",
+      "source_file": "backend\\app\\routers\\projects.py",
+      "source_location": "L1",
+      "id": "backend_app_routers_projects_py",
+      "community": 0,
+      "norm_label": "projects.py"
+    },
+    {
+      "label": "get_projects()",
+      "file_type": "code",
+      "source_file": "backend\\app\\routers\\projects.py",
+      "source_location": "L15",
+      "id": "routers_projects_get_projects",
+      "community": 0,
+      "norm_label": "get_projects()"
+    },
+    {
+      "label": "create_project()",
+      "file_type": "code",
+      "source_file": "backend\\app\\routers\\projects.py",
+      "source_location": "L29",
+      "id": "routers_projects_create_project",
+      "community": 0,
+      "norm_label": "create_project()"
+    },
+    {
+      "label": "get_project()",
+      "file_type": "code",
+      "source_file": "backend\\app\\routers\\projects.py",
+      "source_location": "L46",
+      "id": "routers_projects_get_project",
+      "community": 0,
+      "norm_label": "get_project()"
+    },
+    {
+      "label": "update_project()",
+      "file_type": "code",
+      "source_file": "backend\\app\\routers\\projects.py",
+      "source_location": "L69",
+      "id": "routers_projects_update_project",
+      "community": 0,
+      "norm_label": "update_project()"
+    },
+    {
+      "label": "delete_project()",
+      "file_type": "code",
+      "source_file": "backend\\app\\routers\\projects.py",
+      "source_location": "L84",
+      "id": "routers_projects_delete_project",
+      "community": 0,
+      "norm_label": "delete_project()"
+    },
+    {
+      "label": "add_member()",
+      "file_type": "code",
+      "source_file": "backend\\app\\routers\\projects.py",
+      "source_location": "L94",
+      "id": "routers_projects_add_member",
+      "community": 0,
+      "norm_label": "add_member()"
+    },
+    {
+      "label": "remove_member()",
+      "file_type": "code",
+      "source_file": "backend\\app\\routers\\projects.py",
+      "source_location": "L115",
+      "id": "routers_projects_remove_member",
+      "community": 0,
+      "norm_label": "remove_member()"
+    },
+    {
+      "label": "tasks.py",
+      "file_type": "code",
+      "source_file": "backend\\app\\routers\\tasks.py",
+      "source_location": "L1",
+      "id": "backend_app_routers_tasks_py",
+      "community": 0,
+      "norm_label": "tasks.py"
+    },
+    {
+      "label": "get_project_tasks()",
+      "file_type": "code",
+      "source_file": "backend\\app\\routers\\tasks.py",
+      "source_location": "L14",
+      "id": "routers_tasks_get_project_tasks",
+      "community": 0,
+      "norm_label": "get_project_tasks()"
+    },
+    {
+      "label": "create_task()",
+      "file_type": "code",
+      "source_file": "backend\\app\\routers\\tasks.py",
+      "source_location": "L35",
+      "id": "routers_tasks_create_task",
+      "community": 0,
+      "norm_label": "create_task()"
+    },
+    {
+      "label": "update_task()",
+      "file_type": "code",
+      "source_file": "backend\\app\\routers\\tasks.py",
+      "source_location": "L62",
+      "id": "routers_tasks_update_task",
+      "community": 0,
+      "norm_label": "update_task()"
+    },
+    {
+      "label": "delete_task()",
+      "file_type": "code",
+      "source_file": "backend\\app\\routers\\tasks.py",
+      "source_location": "L87",
+      "id": "routers_tasks_delete_task",
+      "community": 0,
+      "norm_label": "delete_task()"
+    },
+    {
+      "label": "users.py",
+      "file_type": "code",
+      "source_file": "backend\\app\\routers\\users.py",
+      "source_location": "L1",
+      "id": "backend_app_routers_users_py",
+      "community": 3,
+      "norm_label": "users.py"
+    },
+    {
+      "label": "get_all_users()",
+      "file_type": "code",
+      "source_file": "backend\\app\\routers\\users.py",
+      "source_location": "L11",
+      "id": "routers_users_get_all_users",
+      "community": 3,
+      "norm_label": "get_all_users()"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "backend\\app\\routers\\__init__.py",
+      "source_location": "L1",
+      "id": "backend_app_routers_init_py",
+      "community": 8,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "auth.py",
+      "file_type": "code",
+      "source_file": "backend\\app\\schemas\\auth.py",
+      "source_location": "L1",
+      "id": "backend_app_schemas_auth_py",
+      "community": 1,
+      "norm_label": "auth.py"
+    },
+    {
+      "label": "SignupRequest",
+      "file_type": "code",
+      "source_file": "backend\\app\\schemas\\auth.py",
+      "source_location": "L6",
+      "id": "schemas_auth_signuprequest",
+      "community": 1,
+      "norm_label": "signuprequest"
+    },
+    {
+      "label": "BaseModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "basemodel",
+      "community": 1,
+      "norm_label": "basemodel"
+    },
+    {
+      "label": "password_must_contain_digit()",
+      "file_type": "code",
+      "source_file": "backend\\app\\schemas\\auth.py",
+      "source_location": "L13",
+      "id": "schemas_auth_password_must_contain_digit",
+      "community": 1,
+      "norm_label": "password_must_contain_digit()"
+    },
+    {
+      "label": "LoginRequest",
+      "file_type": "code",
+      "source_file": "backend\\app\\schemas\\auth.py",
+      "source_location": "L18",
+      "id": "schemas_auth_loginrequest",
+      "community": 1,
+      "norm_label": "loginrequest"
+    },
+    {
+      "label": "UserOut",
+      "file_type": "code",
+      "source_file": "backend\\app\\schemas\\auth.py",
+      "source_location": "L22",
+      "id": "schemas_auth_userout",
+      "community": 1,
+      "norm_label": "userout"
+    },
+    {
+      "label": "Config",
+      "file_type": "code",
+      "source_file": "backend\\app\\schemas\\auth.py",
+      "source_location": "L29",
+      "id": "schemas_auth_config",
+      "community": 1,
+      "norm_label": "config"
+    },
+    {
+      "label": "TokenResponse",
+      "file_type": "code",
+      "source_file": "backend\\app\\schemas\\auth.py",
+      "source_location": "L32",
+      "id": "schemas_auth_tokenresponse",
+      "community": 1,
+      "norm_label": "tokenresponse"
+    },
+    {
+      "label": "project.py",
+      "file_type": "code",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L1",
+      "id": "backend_app_schemas_project_py",
+      "community": 1,
+      "norm_label": "project.py"
+    },
+    {
+      "label": "MemberOut",
+      "file_type": "code",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L7",
+      "id": "schemas_project_memberout",
+      "community": 1,
+      "norm_label": "memberout"
+    },
+    {
+      "label": "ProjectCreate",
+      "file_type": "code",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L15",
+      "id": "schemas_project_projectcreate",
+      "community": 1,
+      "norm_label": "projectcreate"
+    },
+    {
+      "label": "ProjectUpdate",
+      "file_type": "code",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L19",
+      "id": "schemas_project_projectupdate",
+      "community": 1,
+      "norm_label": "projectupdate"
+    },
+    {
+      "label": "ProjectOut",
+      "file_type": "code",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L23",
+      "id": "schemas_project_projectout",
+      "community": 1,
+      "norm_label": "projectout"
+    },
+    {
+      "label": "ProjectDetail",
+      "file_type": "code",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L34",
+      "id": "schemas_project_projectdetail",
+      "community": 1,
+      "norm_label": "projectdetail"
+    },
+    {
+      "label": "AddMemberRequest",
+      "file_type": "code",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L38",
+      "id": "schemas_project_addmemberrequest",
+      "community": 1,
+      "norm_label": "addmemberrequest"
+    },
+    {
+      "label": "task.py",
+      "file_type": "code",
+      "source_file": "backend\\app\\schemas\\task.py",
+      "source_location": "L1",
+      "id": "backend_app_schemas_task_py",
+      "community": 1,
+      "norm_label": "task.py"
+    },
+    {
+      "label": "MemberOut",
+      "file_type": "code",
+      "source_file": "backend\\app\\schemas\\task.py",
+      "source_location": "L6",
+      "id": "schemas_task_memberout",
+      "community": 1,
+      "norm_label": "memberout"
+    },
+    {
+      "label": "TaskCreate",
+      "file_type": "code",
+      "source_file": "backend\\app\\schemas\\task.py",
+      "source_location": "L14",
+      "id": "schemas_task_taskcreate",
+      "community": 1,
+      "norm_label": "taskcreate"
+    },
+    {
+      "label": "TaskUpdate",
+      "file_type": "code",
+      "source_file": "backend\\app\\schemas\\task.py",
+      "source_location": "L21",
+      "id": "schemas_task_taskupdate",
+      "community": 1,
+      "norm_label": "taskupdate"
+    },
+    {
+      "label": "TaskStatusUpdate",
+      "file_type": "code",
+      "source_file": "backend\\app\\schemas\\task.py",
+      "source_location": "L29",
+      "id": "schemas_task_taskstatusupdate",
+      "community": 1,
+      "norm_label": "taskstatusupdate"
+    },
+    {
+      "label": "TaskOut",
+      "file_type": "code",
+      "source_file": "backend\\app\\schemas\\task.py",
+      "source_location": "L32",
+      "id": "schemas_task_taskout",
+      "community": 1,
+      "norm_label": "taskout"
+    },
+    {
+      "label": "eslint.config.js",
+      "file_type": "code",
+      "source_file": "frontend\\eslint.config.js",
+      "source_location": "L1",
+      "id": "frontend_eslint_config_js",
+      "community": 9,
+      "norm_label": "eslint.config.js"
+    },
+    {
+      "label": "vite.config.ts",
+      "file_type": "code",
+      "source_file": "frontend\\vite.config.ts",
+      "source_location": "L1",
+      "id": "frontend_vite_config_ts",
+      "community": 10,
+      "norm_label": "vite.config.ts"
+    },
+    {
+      "label": "App.tsx",
+      "file_type": "code",
+      "source_file": "frontend\\src\\App.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_app_tsx",
+      "community": 4,
+      "norm_label": "app.tsx"
+    },
+    {
+      "label": "ProtectedRoute()",
+      "file_type": "code",
+      "source_file": "frontend\\src\\App.tsx",
+      "source_location": "L12",
+      "id": "src_app_protectedroute",
+      "community": 4,
+      "norm_label": "protectedroute()"
+    },
+    {
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "frontend\\src\\App.tsx",
+      "source_location": "L21",
+      "id": "src_app_app",
+      "community": 4,
+      "norm_label": "app()"
+    },
+    {
+      "label": "main.tsx",
+      "file_type": "code",
+      "source_file": "frontend\\src\\main.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_main_tsx",
+      "community": 4,
+      "norm_label": "main.tsx"
+    },
+    {
+      "label": "types.ts",
+      "file_type": "code",
+      "source_file": "frontend\\src\\types.ts",
+      "source_location": "L1",
+      "id": "frontend_src_types_ts",
+      "community": 11,
+      "norm_label": "types.ts"
+    },
+    {
+      "label": "Layout.tsx",
+      "file_type": "code",
+      "source_file": "frontend\\src\\components\\Layout.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_components_layout_tsx",
+      "community": 4,
+      "norm_label": "layout.tsx"
+    },
+    {
+      "label": "badge.tsx",
+      "file_type": "code",
+      "source_file": "frontend\\src\\components\\ui\\badge.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_components_ui_badge_tsx",
+      "community": 2,
+      "norm_label": "badge.tsx"
+    },
+    {
+      "label": "Badge()",
+      "file_type": "code",
+      "source_file": "frontend\\src\\components\\ui\\badge.tsx",
+      "source_location": "L30",
+      "id": "ui_badge_badge",
+      "community": 2,
+      "norm_label": "badge()"
+    },
+    {
+      "label": "button.tsx",
+      "file_type": "code",
+      "source_file": "frontend\\src\\components\\ui\\button.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_components_ui_button_tsx",
+      "community": 2,
+      "norm_label": "button.tsx"
+    },
+    {
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "frontend\\src\\components\\ui\\button.tsx",
+      "source_location": "L61",
+      "id": "ui_button_cn",
+      "community": 2,
+      "norm_label": "cn()"
+    },
+    {
+      "label": "card.tsx",
+      "file_type": "code",
+      "source_file": "frontend\\src\\components\\ui\\card.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_components_ui_card_tsx",
+      "community": 2,
+      "norm_label": "card.tsx"
+    },
+    {
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "frontend\\src\\components\\ui\\card.tsx",
+      "source_location": "L14",
+      "id": "ui_card_cn",
+      "community": 2,
+      "norm_label": "cn()"
+    },
+    {
+      "label": "CardAction()",
+      "file_type": "code",
+      "source_file": "frontend\\src\\components\\ui\\card.tsx",
+      "source_location": "L59",
+      "id": "ui_card_cardaction",
+      "community": 2,
+      "norm_label": "cardaction()"
+    },
+    {
+      "label": "input.tsx",
+      "file_type": "code",
+      "source_file": "frontend\\src\\components\\ui\\input.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_components_ui_input_tsx",
+      "community": 2,
+      "norm_label": "input.tsx"
+    },
+    {
+      "label": "label.tsx",
+      "file_type": "code",
+      "source_file": "frontend\\src\\components\\ui\\label.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_components_ui_label_tsx",
+      "community": 4,
+      "norm_label": "label.tsx"
+    },
+    {
+      "label": "Label()",
+      "file_type": "code",
+      "source_file": "frontend\\src\\components\\ui\\label.tsx",
+      "source_location": "L6",
+      "id": "ui_label_label",
+      "community": 4,
+      "norm_label": "label()"
+    },
+    {
+      "label": "progress.tsx",
+      "file_type": "code",
+      "source_file": "frontend\\src\\components\\ui\\progress.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_components_ui_progress_tsx",
+      "community": 2,
+      "norm_label": "progress.tsx"
+    },
+    {
+      "label": "tabs.tsx",
+      "file_type": "code",
+      "source_file": "frontend\\src\\components\\ui\\tabs.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_components_ui_tabs_tsx",
+      "community": 2,
+      "norm_label": "tabs.tsx"
+    },
+    {
+      "label": "Tabs()",
+      "file_type": "code",
+      "source_file": "frontend\\src\\components\\ui\\tabs.tsx",
+      "source_location": "L7",
+      "id": "ui_tabs_tabs",
+      "community": 2,
+      "norm_label": "tabs()"
+    },
+    {
+      "label": "AuthContext.tsx",
+      "file_type": "code",
+      "source_file": "frontend\\src\\context\\AuthContext.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_context_authcontext_tsx",
+      "community": 4,
+      "norm_label": "authcontext.tsx"
+    },
+    {
+      "label": "useAuth()",
+      "file_type": "code",
+      "source_file": "frontend\\src\\context\\AuthContext.tsx",
+      "source_location": "L66",
+      "id": "context_authcontext_useauth",
+      "community": 4,
+      "norm_label": "useauth()"
+    },
+    {
+      "label": "axios.ts",
+      "file_type": "code",
+      "source_file": "frontend\\src\\lib\\axios.ts",
+      "source_location": "L1",
+      "id": "frontend_src_lib_axios_ts",
+      "community": 12,
+      "norm_label": "axios.ts"
+    },
+    {
+      "label": "utils.ts",
+      "file_type": "code",
+      "source_file": "frontend\\src\\lib\\utils.ts",
+      "source_location": "L1",
+      "id": "frontend_src_lib_utils_ts",
+      "community": 2,
+      "norm_label": "utils.ts"
+    },
+    {
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "frontend\\src\\lib\\utils.ts",
+      "source_location": "L4",
+      "id": "lib_utils_cn",
+      "community": 2,
+      "norm_label": "cn()"
+    },
+    {
+      "label": "Dashboard.tsx",
+      "file_type": "code",
+      "source_file": "frontend\\src\\pages\\Dashboard.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_pages_dashboard_tsx",
+      "community": 2,
+      "norm_label": "dashboard.tsx"
+    },
+    {
+      "label": "fetchDashboard()",
+      "file_type": "code",
+      "source_file": "frontend\\src\\pages\\Dashboard.tsx",
+      "source_location": "L29",
+      "id": "pages_dashboard_fetchdashboard",
+      "community": 2,
+      "norm_label": "fetchdashboard()"
+    },
+    {
+      "label": "Login.tsx",
+      "file_type": "code",
+      "source_file": "frontend\\src\\pages\\auth\\Login.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_pages_auth_login_tsx",
+      "community": 4,
+      "norm_label": "login.tsx"
+    },
+    {
+      "label": "handleSubmit()",
+      "file_type": "code",
+      "source_file": "frontend\\src\\pages\\auth\\Login.tsx",
+      "source_location": "L20",
+      "id": "auth_login_handlesubmit",
+      "community": 4,
+      "norm_label": "handlesubmit()"
+    },
+    {
+      "label": "Signup.tsx",
+      "file_type": "code",
+      "source_file": "frontend\\src\\pages\\auth\\Signup.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_pages_auth_signup_tsx",
+      "community": 4,
+      "norm_label": "signup.tsx"
+    },
+    {
+      "label": "handleSubmit()",
+      "file_type": "code",
+      "source_file": "frontend\\src\\pages\\auth\\Signup.tsx",
+      "source_location": "L21",
+      "id": "auth_signup_handlesubmit",
+      "community": 4,
+      "norm_label": "handlesubmit()"
+    },
+    {
+      "label": "ProjectDetails.tsx",
+      "file_type": "code",
+      "source_file": "frontend\\src\\pages\\projects\\ProjectDetails.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_pages_projects_projectdetails_tsx",
+      "community": 2,
+      "norm_label": "projectdetails.tsx"
+    },
+    {
+      "label": "fetchData()",
+      "file_type": "code",
+      "source_file": "frontend\\src\\pages\\projects\\ProjectDetails.tsx",
+      "source_location": "L31",
+      "id": "projects_projectdetails_fetchdata",
+      "community": 2,
+      "norm_label": "fetchdata()"
+    },
+    {
+      "label": "updateTaskStatus()",
+      "file_type": "code",
+      "source_file": "frontend\\src\\pages\\projects\\ProjectDetails.tsx",
+      "source_location": "L48",
+      "id": "projects_projectdetails_updatetaskstatus",
+      "community": 2,
+      "norm_label": "updatetaskstatus()"
+    },
+    {
+      "label": "Projects.tsx",
+      "file_type": "code",
+      "source_file": "frontend\\src\\pages\\projects\\Projects.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_pages_projects_projects_tsx",
+      "community": 2,
+      "norm_label": "projects.tsx"
+    },
+    {
+      "label": "fetchProjects()",
+      "file_type": "code",
+      "source_file": "frontend\\src\\pages\\projects\\Projects.tsx",
+      "source_location": "L27",
+      "id": "projects_projects_fetchprojects",
+      "community": 2,
+      "norm_label": "fetchprojects()"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\main.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "backend_main_py",
+      "target": "backend_main_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\main.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "backend_main_py",
+      "target": "backend_main_health",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\alembic\\env.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "backend_alembic_env_py",
+      "target": "alembic_env_run_migrations_offline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\alembic\\env.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "backend_alembic_env_py",
+      "target": "alembic_env_run_migrations_online",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\alembic\\env.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "alembic_env_rationale_40",
+      "target": "alembic_env_run_migrations_offline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\alembic\\env.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "alembic_env_rationale_64",
+      "target": "alembic_env_run_migrations_online",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\alembic\\versions\\42e0b4fc5555_initial.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "backend_alembic_versions_42e0b4fc5555_initial_py",
+      "target": "versions_42e0b4fc5555_initial_upgrade",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\alembic\\versions\\42e0b4fc5555_initial.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "backend_alembic_versions_42e0b4fc5555_initial_py",
+      "target": "versions_42e0b4fc5555_initial_downgrade",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\alembic\\versions\\42e0b4fc5555_initial.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "versions_42e0b4fc5555_initial_rationale_1",
+      "target": "backend_alembic_versions_42e0b4fc5555_initial_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\core\\config.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "backend_app_core_config_py",
+      "target": "core_config_settings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\core\\dependencies.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "backend_app_core_dependencies_py",
+      "target": "backend_app_core_config_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\core\\security.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "backend_app_core_security_py",
+      "target": "backend_app_core_config_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\core\\config.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "core_config_settings",
+      "target": "basesettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\core\\dependencies.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "backend_app_core_dependencies_py",
+      "target": "backend_app_core_security_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\core\\dependencies.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "backend_app_core_dependencies_py",
+      "target": "backend_app_models_user_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\core\\dependencies.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "backend_app_core_dependencies_py",
+      "target": "core_dependencies_get_db",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\core\\dependencies.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "backend_app_core_dependencies_py",
+      "target": "core_dependencies_get_current_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\core\\dependencies.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "backend_app_core_dependencies_py",
+      "target": "core_dependencies_require_admin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\auth.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "backend_app_routers_auth_py",
+      "target": "backend_app_core_dependencies_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\dashboard.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "backend_app_routers_dashboard_py",
+      "target": "backend_app_core_dependencies_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\projects.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "backend_app_routers_projects_py",
+      "target": "backend_app_core_dependencies_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\tasks.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "backend_app_routers_tasks_py",
+      "target": "backend_app_core_dependencies_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\users.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "backend_app_routers_users_py",
+      "target": "backend_app_core_dependencies_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend\\app\\core\\dependencies.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "core_dependencies_get_current_user",
+      "target": "core_security_decode_token"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\core\\security.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "backend_app_core_security_py",
+      "target": "core_security_hash_password",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\core\\security.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "backend_app_core_security_py",
+      "target": "core_security_verify_password",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\core\\security.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "backend_app_core_security_py",
+      "target": "core_security_create_access_token",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\core\\security.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "backend_app_core_security_py",
+      "target": "core_security_decode_token",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\auth.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "backend_app_routers_auth_py",
+      "target": "backend_app_core_security_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend\\app\\routers\\auth.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "routers_auth_signup",
+      "target": "core_security_hash_password"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend\\app\\routers\\auth.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "routers_auth_login",
+      "target": "core_security_verify_password"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend\\app\\routers\\auth.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "routers_auth_signup",
+      "target": "core_security_create_access_token"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend\\app\\routers\\auth.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "routers_auth_login",
+      "target": "core_security_create_access_token"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\models\\base.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "backend_app_models_base_py",
+      "target": "models_base_base",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\models\\project.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "backend_app_models_project_py",
+      "target": "backend_app_models_base_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\models\\project_member.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "backend_app_models_project_member_py",
+      "target": "backend_app_models_base_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\models\\task.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "backend_app_models_task_py",
+      "target": "backend_app_models_base_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\models\\user.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "backend_app_models_user_py",
+      "target": "backend_app_models_base_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\models\\__init__.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "backend_app_models_init_py",
+      "target": "backend_app_models_base_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\models\\base.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "models_base_base",
+      "target": "declarativebase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend\\app\\models\\project.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "source": "models_project_project",
+      "target": "models_base_base",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend\\app\\models\\task.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "source": "models_task_task",
+      "target": "models_base_base",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend\\app\\models\\user.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "source": "models_user_user",
+      "target": "models_base_base",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\models\\project.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "backend_app_models_project_py",
+      "target": "models_project_project",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\models\\__init__.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "backend_app_models_init_py",
+      "target": "backend_app_models_project_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\dashboard.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "backend_app_routers_dashboard_py",
+      "target": "backend_app_models_project_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\projects.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "backend_app_routers_projects_py",
+      "target": "backend_app_models_project_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\tasks.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "backend_app_routers_tasks_py",
+      "target": "backend_app_models_project_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\models\\project.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "models_project_project",
+      "target": "base",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend\\app\\routers\\projects.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "routers_projects_create_project",
+      "target": "models_project_project"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\models\\task.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "models_task_task",
+      "target": "base",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\models\\user.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "models_user_user",
+      "target": "base",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\models\\__init__.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "backend_app_models_init_py",
+      "target": "backend_app_models_project_member_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\dashboard.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "backend_app_routers_dashboard_py",
+      "target": "backend_app_models_project_member_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\projects.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "backend_app_routers_projects_py",
+      "target": "backend_app_models_project_member_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\tasks.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "backend_app_routers_tasks_py",
+      "target": "backend_app_models_project_member_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\models\\task.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "backend_app_models_task_py",
+      "target": "models_task_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\models\\__init__.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "backend_app_models_init_py",
+      "target": "backend_app_models_task_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\dashboard.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "backend_app_routers_dashboard_py",
+      "target": "backend_app_models_task_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\projects.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "backend_app_routers_projects_py",
+      "target": "backend_app_models_task_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\tasks.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "backend_app_routers_tasks_py",
+      "target": "backend_app_models_task_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend\\app\\routers\\tasks.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "routers_tasks_create_task",
+      "target": "models_task_task"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\models\\user.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "backend_app_models_user_py",
+      "target": "models_user_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\models\\__init__.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "backend_app_models_init_py",
+      "target": "backend_app_models_user_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\auth.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "backend_app_routers_auth_py",
+      "target": "backend_app_models_user_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\dashboard.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "backend_app_routers_dashboard_py",
+      "target": "backend_app_models_user_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\projects.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "backend_app_routers_projects_py",
+      "target": "backend_app_models_user_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\tasks.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "backend_app_routers_tasks_py",
+      "target": "backend_app_models_user_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\users.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "backend_app_routers_users_py",
+      "target": "backend_app_models_user_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend\\app\\routers\\auth.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "routers_auth_signup",
+      "target": "models_user_user"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\auth.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "backend_app_routers_auth_py",
+      "target": "backend_app_schemas_auth_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\auth.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "backend_app_routers_auth_py",
+      "target": "routers_auth_signup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\auth.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "backend_app_routers_auth_py",
+      "target": "routers_auth_login",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\auth.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "backend_app_routers_auth_py",
+      "target": "routers_auth_get_me",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend\\src\\pages\\auth\\Login.tsx",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "auth_login_handlesubmit",
+      "target": "routers_auth_login"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend\\src\\pages\\auth\\Signup.tsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "auth_signup_handlesubmit",
+      "target": "routers_auth_login"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\dashboard.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "backend_app_routers_dashboard_py",
+      "target": "routers_dashboard_get_dashboard_data",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\projects.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "backend_app_routers_projects_py",
+      "target": "backend_app_schemas_project_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\projects.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "backend_app_routers_projects_py",
+      "target": "routers_projects_get_projects",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\projects.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "backend_app_routers_projects_py",
+      "target": "routers_projects_create_project",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\projects.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "backend_app_routers_projects_py",
+      "target": "routers_projects_get_project",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\projects.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "backend_app_routers_projects_py",
+      "target": "routers_projects_update_project",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\projects.py",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "backend_app_routers_projects_py",
+      "target": "routers_projects_delete_project",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\projects.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "backend_app_routers_projects_py",
+      "target": "routers_projects_add_member",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\projects.py",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "backend_app_routers_projects_py",
+      "target": "routers_projects_remove_member",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\tasks.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "backend_app_routers_tasks_py",
+      "target": "backend_app_schemas_task_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\tasks.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "backend_app_routers_tasks_py",
+      "target": "routers_tasks_get_project_tasks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\tasks.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "backend_app_routers_tasks_py",
+      "target": "routers_tasks_create_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\tasks.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "backend_app_routers_tasks_py",
+      "target": "routers_tasks_update_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\tasks.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "backend_app_routers_tasks_py",
+      "target": "routers_tasks_delete_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\users.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "backend_app_routers_users_py",
+      "target": "backend_app_schemas_auth_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\users.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "backend_app_routers_users_py",
+      "target": "routers_users_get_all_users",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\routers\\__init__.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "backend_app_routers_init_py",
+      "target": "backend_app_routers_init_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\auth.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "backend_app_schemas_auth_py",
+      "target": "schemas_auth_signuprequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\auth.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "backend_app_schemas_auth_py",
+      "target": "schemas_auth_password_must_contain_digit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\auth.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "backend_app_schemas_auth_py",
+      "target": "schemas_auth_loginrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\auth.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "backend_app_schemas_auth_py",
+      "target": "schemas_auth_userout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\auth.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "backend_app_schemas_auth_py",
+      "target": "schemas_auth_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\auth.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "backend_app_schemas_auth_py",
+      "target": "schemas_auth_tokenresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "backend_app_schemas_project_py",
+      "target": "backend_app_schemas_auth_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\auth.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "schemas_auth_signuprequest",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\auth.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "schemas_auth_loginrequest",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\auth.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "schemas_auth_userout",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\auth.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "schemas_auth_tokenresponse",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "schemas_project_memberout",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "schemas_project_projectcreate",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "schemas_project_projectupdate",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "schemas_project_projectout",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "schemas_project_addmemberrequest",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\task.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "schemas_task_memberout",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\task.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "schemas_task_taskcreate",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\task.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "schemas_task_taskupdate",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\task.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "schemas_task_taskstatusupdate",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\task.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "schemas_task_taskout",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "source": "schemas_project_memberout",
+      "target": "schemas_auth_userout",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "source": "schemas_project_projectcreate",
+      "target": "schemas_auth_userout",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "source": "schemas_project_projectupdate",
+      "target": "schemas_auth_userout",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "source": "schemas_project_projectout",
+      "target": "schemas_auth_userout",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "source": "schemas_project_projectdetail",
+      "target": "schemas_auth_userout",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "source": "schemas_project_addmemberrequest",
+      "target": "schemas_auth_userout",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "backend_app_schemas_project_py",
+      "target": "schemas_project_memberout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "backend_app_schemas_project_py",
+      "target": "schemas_project_projectcreate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "backend_app_schemas_project_py",
+      "target": "schemas_project_projectupdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "backend_app_schemas_project_py",
+      "target": "schemas_project_projectout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "backend_app_schemas_project_py",
+      "target": "schemas_project_projectdetail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "backend_app_schemas_project_py",
+      "target": "schemas_project_addmemberrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\project.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "schemas_project_projectdetail",
+      "target": "schemas_project_projectout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\task.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "backend_app_schemas_task_py",
+      "target": "schemas_task_memberout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\task.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "backend_app_schemas_task_py",
+      "target": "schemas_task_taskcreate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\task.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "backend_app_schemas_task_py",
+      "target": "schemas_task_taskupdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\task.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "backend_app_schemas_task_py",
+      "target": "schemas_task_taskstatusupdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend\\app\\schemas\\task.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "backend_app_schemas_task_py",
+      "target": "schemas_task_taskout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\App.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "frontend_src_app_tsx",
+      "target": "context_authcontext_useauth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\App.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "frontend_src_app_tsx",
+      "target": "src_app_protectedroute",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\App.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "frontend_src_app_tsx",
+      "target": "src_app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\main.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "frontend_src_main_tsx",
+      "target": "frontend_src_app_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend\\src\\App.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_app_protectedroute",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\components\\Layout.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "frontend_src_components_layout_tsx",
+      "target": "context_authcontext_useauth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\components\\ui\\badge.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "frontend_src_components_ui_badge_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\components\\ui\\badge.tsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "frontend_src_components_ui_badge_tsx",
+      "target": "ui_badge_badge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\pages\\Dashboard.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "frontend_src_pages_dashboard_tsx",
+      "target": "ui_badge_badge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\pages\\projects\\ProjectDetails.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "frontend_src_pages_projects_projectdetails_tsx",
+      "target": "ui_badge_badge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\pages\\projects\\Projects.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "frontend_src_pages_projects_projects_tsx",
+      "target": "ui_badge_badge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\components\\ui\\button.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "frontend_src_components_ui_button_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\components\\ui\\button.tsx",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "frontend_src_components_ui_button_tsx",
+      "target": "ui_button_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\components\\ui\\card.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "frontend_src_components_ui_card_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\components\\ui\\card.tsx",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "frontend_src_components_ui_card_tsx",
+      "target": "ui_card_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\components\\ui\\card.tsx",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "frontend_src_components_ui_card_tsx",
+      "target": "ui_card_cardaction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\components\\ui\\input.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "frontend_src_components_ui_input_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\components\\ui\\label.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "frontend_src_components_ui_label_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\components\\ui\\label.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "frontend_src_components_ui_label_tsx",
+      "target": "ui_label_label",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\pages\\auth\\Login.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "frontend_src_pages_auth_login_tsx",
+      "target": "ui_label_label",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\pages\\auth\\Signup.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "frontend_src_pages_auth_signup_tsx",
+      "target": "ui_label_label",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\components\\ui\\progress.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "frontend_src_components_ui_progress_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\components\\ui\\tabs.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "frontend_src_components_ui_tabs_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\components\\ui\\tabs.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "frontend_src_components_ui_tabs_tsx",
+      "target": "ui_tabs_tabs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\pages\\projects\\ProjectDetails.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "frontend_src_pages_projects_projectdetails_tsx",
+      "target": "ui_tabs_tabs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\context\\AuthContext.tsx",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "frontend_src_context_authcontext_tsx",
+      "target": "context_authcontext_useauth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\pages\\auth\\Login.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "frontend_src_pages_auth_login_tsx",
+      "target": "context_authcontext_useauth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\pages\\auth\\Signup.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "frontend_src_pages_auth_signup_tsx",
+      "target": "context_authcontext_useauth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\lib\\utils.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "frontend_src_lib_utils_ts",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\pages\\Dashboard.tsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "frontend_src_pages_dashboard_tsx",
+      "target": "pages_dashboard_fetchdashboard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\pages\\auth\\Login.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "frontend_src_pages_auth_login_tsx",
+      "target": "auth_login_handlesubmit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\pages\\auth\\Signup.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "frontend_src_pages_auth_signup_tsx",
+      "target": "auth_signup_handlesubmit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\pages\\projects\\ProjectDetails.tsx",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "frontend_src_pages_projects_projectdetails_tsx",
+      "target": "projects_projectdetails_fetchdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\pages\\projects\\ProjectDetails.tsx",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "frontend_src_pages_projects_projectdetails_tsx",
+      "target": "projects_projectdetails_updatetaskstatus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend\\src\\pages\\projects\\Projects.tsx",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "frontend_src_pages_projects_projects_tsx",
+      "target": "projects_projects_fetchprojects",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}

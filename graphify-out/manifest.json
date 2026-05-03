@@ -1,0 +1,214 @@
+{
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\backend\\main.py": {
+    "mtime": 1777802832.5435066,
+    "hash": "d71efa10ad9812113177b87cd5027129"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\backend\\alembic\\env.py": {
+    "mtime": 1777802091.1317117,
+    "hash": "9e3cc632a65ed9dd2ef3a1acdb785cfe"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\backend\\alembic\\versions\\42e0b4fc5555_initial.py": {
+    "mtime": 1777802105.2526014,
+    "hash": "004c9dfd2ca2b09f09479f5b32a7773a"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\backend\\app\\core\\config.py": {
+    "mtime": 1777801824.0587888,
+    "hash": "98c4f532d1b24f5eb583ae05f0483ee9"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\backend\\app\\core\\dependencies.py": {
+    "mtime": 1777802693.6888933,
+    "hash": "8db74b06356b7fdb752e7d298d92e7ea"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\backend\\app\\core\\security.py": {
+    "mtime": 1777802400.1924622,
+    "hash": "2442d43ae25117fcef01f5e167f24495"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\backend\\app\\models\\base.py": {
+    "mtime": 1777801804.1861925,
+    "hash": "ec2c71eec8b59b0f3d0a8e89a90aa51a"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\backend\\app\\models\\project.py": {
+    "mtime": 1777801815.970181,
+    "hash": "8bdeac334579fa9f17a583d7ab247531"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\backend\\app\\models\\project_member.py": {
+    "mtime": 1777801811.9694397,
+    "hash": "bc07b053b70e2ba6125e973a154eb4f6"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\backend\\app\\models\\task.py": {
+    "mtime": 1777801820.164879,
+    "hash": "6bc7c9961a2c4713b509c7de872bba9f"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\backend\\app\\models\\user.py": {
+    "mtime": 1777802666.5457418,
+    "hash": "e061992799393c353cd40700f6bb3d88"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\backend\\app\\models\\__init__.py": {
+    "mtime": 1777802085.393138,
+    "hash": "6edec9d500037a70f2b5693b011ffa67"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\backend\\app\\routers\\auth.py": {
+    "mtime": 1777802256.0014696,
+    "hash": "6eb18b6192e75bbbc2f3808f0400878a"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\backend\\app\\routers\\dashboard.py": {
+    "mtime": 1777802819.130702,
+    "hash": "651c51e313ee0a21413457b852b80a11"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\backend\\app\\routers\\projects.py": {
+    "mtime": 1777802801.6185367,
+    "hash": "6bfdf3df173574c7d944f8d5cee0c1b1"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\backend\\app\\routers\\tasks.py": {
+    "mtime": 1777802810.2176054,
+    "hash": "923c0e56f2392af957e18c40b4b84f6f"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\backend\\app\\routers\\users.py": {
+    "mtime": 1777802823.7476256,
+    "hash": "699d5f3bd83d1bcbe751842ba52d5836"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\backend\\app\\routers\\__init__.py": {
+    "mtime": 1777802827.2187438,
+    "hash": "d3b1668789c9427259c03349a8c9deac"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\backend\\app\\schemas\\auth.py": {
+    "mtime": 1777802251.0851405,
+    "hash": "1dd223150b3876df833f313f96724e54"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\backend\\app\\schemas\\project.py": {
+    "mtime": 1777802787.5911312,
+    "hash": "0372e64f60b30131e43afe5f68d427b5"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\backend\\app\\schemas\\task.py": {
+    "mtime": 1777802792.514301,
+    "hash": "66d260e7a9d3867d6f978ae4c92b6471"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\eslint.config.js": {
+    "mtime": 1777739132.6719646,
+    "hash": "0355276bc79439afe3c53e3a2470ca1e"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\vite.config.ts": {
+    "mtime": 1777803185.0438278,
+    "hash": "c858141c669778fc8ae3015558e56a78"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\src\\App.tsx": {
+    "mtime": 1777803710.3634675,
+    "hash": "fe3f0f094e75942039fd05d02bf2f455"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\src\\main.tsx": {
+    "mtime": 1777739132.9017763,
+    "hash": "787e5a07efeb2bf6209d5937195f2f68"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\src\\types.ts": {
+    "mtime": 1777803357.9890077,
+    "hash": "47771920069043284c8211905a4320c2"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\src\\components\\Layout.tsx": {
+    "mtime": 1777803438.990859,
+    "hash": "52b2c9c53b6b6f03e3bf59786d6d9902"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\src\\components\\ui\\badge.tsx": {
+    "mtime": 1777804226.99913,
+    "hash": "affdaf8bd8dda0dc4a6c50e1dd7f7d77"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\src\\components\\ui\\button.tsx": {
+    "mtime": 1777804775.5060856,
+    "hash": "372e907981988b0bd6c38a8a4c4f889e"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\src\\components\\ui\\card.tsx": {
+    "mtime": 1777804227.0092578,
+    "hash": "ee74a83be6bb8fc3473cb6cceffe8813"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\src\\components\\ui\\input.tsx": {
+    "mtime": 1777804227.0154076,
+    "hash": "ffe96ac26ee9c563f4ae55abc55f54d5"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\src\\components\\ui\\label.tsx": {
+    "mtime": 1777804534.5400417,
+    "hash": "d4ef49489280dcae40f74917cb83f8a1"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\src\\components\\ui\\progress.tsx": {
+    "mtime": 1777804534.5453973,
+    "hash": "daa1fafccf277417c7feec635c52e66e"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\src\\components\\ui\\tabs.tsx": {
+    "mtime": 1777804534.5438452,
+    "hash": "7a6134d95666e8d7c4347dda215365b9"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\src\\context\\AuthContext.tsx": {
+    "mtime": 1777804867.3652513,
+    "hash": "dfddb43ee39a49547112dee0d6d8a0ed"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\src\\lib\\axios.ts": {
+    "mtime": 1777803362.3896587,
+    "hash": "411e134c2cf3b8e33699420df8bd715e"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\src\\lib\\utils.ts": {
+    "mtime": 1777803324.138685,
+    "hash": "5a6fd53fdcf2be529e9cc0b718fde352"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\src\\pages\\Dashboard.tsx": {
+    "mtime": 1777804867.383168,
+    "hash": "30df404dac2a85b0cc8bc413361118a6"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\src\\pages\\auth\\Login.tsx": {
+    "mtime": 1777803400.1803083,
+    "hash": "db16bc89b9a434a5a430451bd5cf068f"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\src\\pages\\auth\\Signup.tsx": {
+    "mtime": 1777803408.2678387,
+    "hash": "19831482ae073f967ccf828b5e43a0f6"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\src\\pages\\projects\\ProjectDetails.tsx": {
+    "mtime": 1777804867.3942928,
+    "hash": "06773977e614eaf12ff013bbe666b30d"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\src\\pages\\projects\\Projects.tsx": {
+    "mtime": 1777804867.388071,
+    "hash": "65a34085c06bc8463fa8186fa7e5b0db"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\DEPLOYMENT.md": {
+    "mtime": 1777803747.4344075,
+    "hash": "9943036b9cdedcc8c6bca2d719c7cfad"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\README.md": {
+    "mtime": 1777801616.9762602,
+    "hash": "da4399c7cf65e649108f2392a7e4e4cc"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\backend\\requirements.txt": {
+    "mtime": 1777802166.295594,
+    "hash": "090415b9c36bf6bc5dbee9a7787063f9"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\backend\\runtime.txt": {
+    "mtime": 1777803738.3204482,
+    "hash": "505a0f5993a6cbc03318b4dc0f422203"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\index.html": {
+    "mtime": 1777802862.1859052,
+    "hash": "33bd262affcefea92f1509cda449a19c"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\README.md": {
+    "mtime": 1777739132.737899,
+    "hash": "f6e3faf55d738cf2affe1b44195f27cf"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\public\\favicon.svg": {
+    "mtime": 1777739132.7910764,
+    "hash": "7e840862161341271697daa99a40d76b"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\public\\icons.svg": {
+    "mtime": 1777739132.8213608,
+    "hash": "3b4fcfcf393eca4d264dca4a4663bc37"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\src\\assets\\hero.png": {
+    "mtime": 1777739132.7650676,
+    "hash": "aead493361b27e7510691c5d7072dfc1"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\src\\assets\\react.svg": {
+    "mtime": 1777739132.8394322,
+    "hash": "f0402b67b6ce880f65666bb49e841696"
+  },
+  "C:\\Users\\Ahmed Shah Turk\\OneDrive\\Desktop\\Nexus\\frontend\\src\\assets\\vite.svg": {
+    "mtime": 1777739132.864992,
+    "hash": "9960a24288958394ac50e57ff638b036"
+  }
+}
