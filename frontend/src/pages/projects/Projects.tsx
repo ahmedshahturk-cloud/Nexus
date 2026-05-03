@@ -17,11 +17,18 @@ import { Link } from 'react-router-dom';
 import api from '../../lib/axios';
 import type { Project } from '@/types';
 import { format } from 'date-fns';
+import { Label } from '../../components/ui/label';
+import { toast } from 'react-hot-toast';
+import { AxiosError } from 'axios';
 
 const Projects: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
+  const [isCreateOpen, setIsCreateOpen] = useState(false);
+  const [projectName, setProjectName] = useState('');
+  const [projectDescription, setProjectDescription] = useState('');
+  const [isCreating, setIsCreating] = useState(false);
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -40,6 +47,35 @@ const Projects: React.FC = () => {
   const filteredProjects = projects.filter(p => 
     p.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  const handleCreateProject = async (event: React.FormEvent) => {
+    event.preventDefault();
+    const name = projectName.trim();
+    const description = projectDescription.trim();
+
+    if (!name) {
+      toast.error('Project name is required');
+      return;
+    }
+
+    setIsCreating(true);
+    try {
+      const response = await api.post('/api/v1/projects/', {
+        name,
+        description: description || null,
+      });
+      setProjects((current) => [response.data, ...current]);
+      setProjectName('');
+      setProjectDescription('');
+      setIsCreateOpen(false);
+      toast.success('Project created');
+    } catch (error) {
+      const detail = error instanceof AxiosError ? error.response?.data?.detail : null;
+      toast.error(detail || 'Failed to create project');
+    } finally {
+      setIsCreating(false);
+    }
+  };
 
   if (loading) {
     return (
@@ -69,12 +105,70 @@ const Projects: React.FC = () => {
               onChange={(e) => setSearchTerm(e.target.value)}
             />
           </div>
-          <Button className="bg-primary hover:bg-primary/90 text-white rounded-xl">
+          <Button
+            className="bg-primary hover:bg-primary/90 text-white rounded-xl"
+            onClick={() => setIsCreateOpen(true)}
+          >
             <Plus className="w-5 h-5 mr-2" />
             New Project
           </Button>
         </div>
       </div>
+
+      {isCreateOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4 backdrop-blur-sm">
+          <div className="w-full max-w-lg rounded-xl border border-white/10 bg-dark-card p-6 shadow-2xl shadow-primary/20">
+            <div className="mb-6">
+              <h2 className="text-2xl font-bold text-text-primary">New Project</h2>
+              <p className="mt-1 text-sm text-text-secondary">Create a workspace for tasks, members, and progress.</p>
+            </div>
+
+            <form onSubmit={handleCreateProject} className="space-y-5">
+              <div className="space-y-2">
+                <Label htmlFor="project-name" className="text-text-primary">Project name</Label>
+                <Input
+                  id="project-name"
+                  value={projectName}
+                  onChange={(event) => setProjectName(event.target.value)}
+                  placeholder="Website redesign"
+                  className="h-11 bg-dark border-dark-border text-white focus-visible:ring-primary/50"
+                  autoFocus
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="project-description" className="text-text-primary">Description</Label>
+                <textarea
+                  id="project-description"
+                  value={projectDescription}
+                  onChange={(event) => setProjectDescription(event.target.value)}
+                  placeholder="Short project brief..."
+                  className="min-h-28 w-full resize-none rounded-lg border border-dark-border bg-dark px-3 py-2 text-sm text-white outline-none transition-colors placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-primary/50"
+                />
+              </div>
+
+              <div className="flex justify-end gap-3 pt-2">
+                <Button
+                  type="button"
+                  variant="outline"
+                  className="h-10 border-dark-border bg-dark text-text-secondary hover:text-text-primary"
+                  onClick={() => setIsCreateOpen(false)}
+                  disabled={isCreating}
+                >
+                  Cancel
+                </Button>
+                <Button
+                  type="submit"
+                  className="h-10 bg-primary px-5 text-white hover:bg-primary/90"
+                  disabled={isCreating}
+                >
+                  {isCreating ? 'Creating...' : 'Create Project'}
+                </Button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredProjects.map((project, index) => (
