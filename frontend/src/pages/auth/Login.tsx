@@ -53,22 +53,22 @@ const Login: React.FC = () => {
           <p className="text-text-secondary mt-2">Team management, evolved.</p>
         </div>
 
-        <Card className="bg-dark-card border-dark-border shadow-2xl backdrop-blur-xl">
-          <CardHeader>
+        <Card className="border-white/15 bg-dark-card/90 shadow-2xl shadow-primary/10 backdrop-blur-xl">
+          <CardHeader className="px-6 pt-6">
             <CardTitle className="text-2xl text-text-primary">Sign In</CardTitle>
             <CardDescription className="text-text-secondary">
               Enter your credentials to access your workspace
             </CardDescription>
           </CardHeader>
           <form onSubmit={handleSubmit}>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-5 px-6 pb-6">
               <div className="space-y-2">
                 <Label htmlFor="email" className="text-text-primary">Email</Label>
                 <Input
                   id="email"
                   type="email"
                   placeholder="name@company.com"
-                  className="bg-dark border-dark-border text-white focus:ring-primary"
+                  className="h-11 bg-dark border-dark-border text-white focus-visible:ring-primary/50"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -76,22 +76,22 @@ const Login: React.FC = () => {
               </div>
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
-                  <Label htmlFor="password" text-text-primary>Password</Label>
+                  <Label htmlFor="password" className="text-text-primary">Password</Label>
                 </div>
                 <Input
                   id="password"
                   type="password"
-                  className="bg-dark border-dark-border text-white focus:ring-primary"
+                  className="h-11 bg-dark border-dark-border text-white focus-visible:ring-primary/50"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
                 />
               </div>
             </CardContent>
-            <CardFooter className="flex flex-col space-y-4">
+            <CardFooter className="flex flex-col space-y-4 border-t-0 bg-transparent px-6 pb-6 pt-0">
               <Button 
                 type="submit" 
-                className="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-6 rounded-xl"
+                className="h-12 w-full bg-primary hover:bg-primary/90 text-white font-semibold rounded-xl shadow-lg shadow-primary/20"
                 disabled={isLoading}
               >
                 {isLoading ? (

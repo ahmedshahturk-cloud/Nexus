@@ -54,22 +54,22 @@ const Signup: React.FC = () => {
           <p className="text-text-secondary mt-2">Join the future of team management.</p>
         </div>
 
-        <Card className="bg-dark-card border-dark-border shadow-2xl backdrop-blur-xl">
-          <CardHeader>
+        <Card className="border-white/15 bg-dark-card/90 shadow-2xl shadow-primary/10 backdrop-blur-xl">
+          <CardHeader className="px-6 pt-6">
             <CardTitle className="text-2xl text-text-primary">Create Account</CardTitle>
             <CardDescription className="text-text-secondary">
               Sign up to start managing your projects effortlessly
             </CardDescription>
           </CardHeader>
           <form onSubmit={handleSubmit}>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-5 px-6 pb-6">
               <div className="space-y-2">
                 <Label htmlFor="name" className="text-text-primary">Full Name</Label>
                 <Input
                   id="name"
                   type="text"
                   placeholder="John Doe"
-                  className="bg-dark border-dark-border text-white focus:ring-primary"
+                  className="h-11 bg-dark border-dark-border text-white focus-visible:ring-primary/50"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
@@ -81,29 +81,29 @@ const Signup: React.FC = () => {
                   id="email"
                   type="email"
                   placeholder="name@company.com"
-                  className="bg-dark border-dark-border text-white focus:ring-primary"
+                  className="h-11 bg-dark border-dark-border text-white focus-visible:ring-primary/50"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="password" text-text-primary>Password</Label>
+                <Label htmlFor="password" className="text-text-primary">Password</Label>
                 <Input
                   id="password"
                   type="password"
                   placeholder="••••••••"
-                  className="bg-dark border-dark-border text-white focus:ring-primary"
+                  className="h-11 bg-dark border-dark-border text-white focus-visible:ring-primary/50"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
                 />
               </div>
             </CardContent>
-            <CardFooter className="flex flex-col space-y-4">
+            <CardFooter className="flex flex-col space-y-4 border-t-0 bg-transparent px-6 pb-6 pt-0">
               <Button 
                 type="submit" 
-                className="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-6 rounded-xl"
+                className="h-12 w-full bg-primary hover:bg-primary/90 text-white font-semibold rounded-xl shadow-lg shadow-primary/20"
                 disabled={isLoading}
               >
                 {isLoading ? (
